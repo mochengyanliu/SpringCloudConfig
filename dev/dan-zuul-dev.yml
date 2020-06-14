@@ -1,0 +1,49 @@
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+server:
+  port: 8764
+spring:
+  application:
+    name: dan-zull
+  redis:
+    ## Redis服务器连接地址
+    host: localhost
+    ## Redis服务器连接端口
+    port: 6379
+    timeout: 5000
+    ## Redis服务器连接密码（默认为空）
+    password: 
+    ## Redis服务器连接db
+    database: 0
+    ## 连接超时时间（毫秒）
+    lettuce:
+      pool:
+        ## 连接池中的最大连接数
+        max-idle: 8
+        ## 连接池中的最小连接数
+        min-idle: 0
+        ## 连接池中的最大空闲连接
+        max-active: 8
+        ## 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      service-id: dan-auth
+    api-b:
+      path: /api-b/**
+      service-id: dan-business
+ribbon:
+  ReadTimeout: 10000
+  SocketTimeout: 60000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
