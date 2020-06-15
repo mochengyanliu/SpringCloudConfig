@@ -39,11 +39,11 @@ zuul:
       service-id: dan-business
 ribbon:
   ReadTimeout: 60000
-  SocketTimeout: 600000
+  SocketTimeout: 60000
 hystrix:
   command:
     default:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 370000
