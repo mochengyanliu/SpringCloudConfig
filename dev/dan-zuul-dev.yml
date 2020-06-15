@@ -38,12 +38,12 @@ zuul:
       path: /api-b/**
       service-id: dan-business
 ribbon:
-  ReadTimeout: 10000
-  SocketTimeout: 60000
+  ReadTimeout: 60000
+  SocketTimeout: 600000
 hystrix:
   command:
     default:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 10000
+            timeoutInMilliseconds: 60000
