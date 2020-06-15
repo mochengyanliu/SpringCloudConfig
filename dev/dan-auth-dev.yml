@@ -6,7 +6,7 @@ server:
   port: 8764
 spring:
   application:
-    name: uav-auth
+    name: dan-auth
   datasource:
     url: jdbc:mysql://localhost:3306/db_auth?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
     username: root
