@@ -38,4 +38,4 @@ mybatis:
   type-aliases-package: com.anji.allways.uavauth.mapper
 logging:
   level:
-    com.anji.allways.uavauth.mapper: DEBUG
+    com.dan.danauth.mapper: DEBUG

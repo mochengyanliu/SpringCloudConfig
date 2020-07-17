@@ -6,7 +6,7 @@ server:
   port: 8765
 spring:
   application:
-    name: uav-autha
+    name: dan-business
   datasource:
     url: jdbc:mysql://localhost:3306/db_business?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
     username: root
@@ -38,4 +38,4 @@ mybatis:
   type-aliases-package: com.dan.danbusiness.mapper.mapper
 logging:
   level:
-    com.dan.danbusiness.mapper.mapper: DEBUG
+    com.dan.danbusiness.mapper: DEBUG
