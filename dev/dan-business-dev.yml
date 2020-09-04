@@ -8,13 +8,13 @@ spring:
   application:
     name: dan-business
   datasource:
-    url: jdbc:mysql://121.37.162.246:3306/db_business?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
+    url: jdbc:mysql://101.133.218.80:3306/db_business?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
   redis:
     ## Redis服务器连接地址
-    host: 121.37.162.246
+    host: 101.133.218.80
     ## Redis服务器连接端口
     port: 6379
     timeout: 5000
